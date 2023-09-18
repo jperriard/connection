@@ -1,0 +1,26 @@
+.rect-group:hover rect {
+    fill: turquoise;
+    cursor: pointer;
+    animation: frameFill 0.2s ease-in-out forwards;
+}
+
+.rect-group:hover text {
+    fill: white;
+    cursor: pointer;
+}
+
+polyline:hover {
+    cursor: pointer;
+    animation: framePolyline 0.2s ease-in-out forwards;
+}
+
+
+@keyframes framePolyline {
+    from { stroke-width: 1; }
+    to { stroke-width: 3; }
+}
+
+@keyframes frameFill {
+    from { fill: transparent; }
+    to { fill: turquoise; }
+}
